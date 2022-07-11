@@ -47,7 +47,7 @@ $ aws s3 rm s3://[your s3 cloud name]/[directory]/ --recursive
 
 ## upload data
 ```
-$ aws s3 sync [your local directory] s3://genohub4956772
+$ aws s3 sync [your local directory] s3://[your s3 cloud name]
 # or 
-$ aws s3 sync [your local directory] s3://genohub4956772/[directory you want to upload]
+$ aws s3 sync [your local directory] s3://[your s3 cloud name]/[directory you want to upload]
 ```
