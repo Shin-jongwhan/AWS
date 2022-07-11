@@ -1,5 +1,5 @@
 # 220711
-## This repository is just description for AWS
+## This repository describe AWS
 
 ### <br/><br/><br/> 
 
