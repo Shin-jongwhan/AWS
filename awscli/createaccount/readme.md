@@ -52,6 +52,7 @@ aws organizations create-account --email meowtail001@gmail.com --account-name "m
 ```
 aws organizations describe-create-account-status --create-account-request-id car-7c8d7600de5711ed8a1f12a9e0efdf35
 ```
+### 잘 생성되었다 !
 #### ![image](https://user-images.githubusercontent.com/62974484/232948679-2bf9fac1-daa2-41d8-9abe-e3e94a6b212f.png)
 #### ![image](https://user-images.githubusercontent.com/62974484/232948752-cb3f5807-bec4-4b49-ac31-55d86feca51b.png)
 ### <br/><br/><br/>
