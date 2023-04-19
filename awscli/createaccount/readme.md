@@ -26,7 +26,36 @@ aws organizations create-account --email shinejh0528@gmail.com --account-name "j
     }
 }
 ```
+### 생성 확인
+```
+aws organizations describe-create-account-status --create-account-request-id "car-5a96e870de5111edb03312a29ff7e955"
+```
+### 이미 있는 이메일이면 등록이 안 된다.
+#### ![image](https://user-images.githubusercontent.com/62974484/232948425-10c0d48f-0fea-4d0b-a898-e752691d53f7.png)
+### <br/>
+
+### 다시 해보자
+```
+aws organizations create-account --email meowtail001@gmail.com --account-name "meowtail_test_org"
+
+```
+```
+{
+    "CreateAccountStatus": {
+        "Id": "car-7c8d7600de5711ed8a1f12a9e0efdf35",
+        "AccountName": "meowtail_test_org",
+        "State": "IN_PROGRESS",
+        "RequestedTimestamp": 1681870285.486
+    }
+}
+```
+```
+aws organizations describe-create-account-status --create-account-request-id car-7c8d7600de5711ed8a1f12a9e0efdf35
+```
+#### ![image](https://user-images.githubusercontent.com/62974484/232948679-2bf9fac1-daa2-41d8-9abe-e3e94a6b212f.png)
+#### ![image](https://user-images.githubusercontent.com/62974484/232948752-cb3f5807-bec4-4b49-ac31-55d86feca51b.png)
 ### <br/><br/><br/>
+
 ### AWS organization 에 가보면 새로운 account 가 생긴 것을 확인할 수 있다.
 #### ![image](https://user-images.githubusercontent.com/62974484/232943612-a8c13be4-9d08-4431-bd71-4968844da78e.png)
 ### <br/><br/><br/>
