@@ -49,6 +49,27 @@ aws iam add-user-to-group --user-name Bob --group-name admin
 #### ![image](https://user-images.githubusercontent.com/62974484/232964592-ef0a78ef-8c27-48ea-b42d-51301ac40833.png)
 ### <br/><br/><br/>
 
+## user - group 제거
+### group 조회
+### * user 를 삭제하려면 attach 된 group 을 제거해줘야 한다.
+```
+aws iam get-group --group-name MyIamGroup
+```
+### user - group 제거
+```
+aws iam remove-user-from-group --group-name admin --user-name Bob
+```
+### 다시 조회해보면 제거된 것을 확인할 수 있다.
+#### ![image](https://user-images.githubusercontent.com/62974484/232965249-e4f14c40-7272-4043-a88d-b75ac4c3bcbc.png)
+### <br/><br/><br/>
+
+## user login profile 제거
+### user 를 삭제하려면 login profile 을 삭제해야 한다.
+```
+aws iam delete-login-profile --user-name Bob
+```
+### <br/><br/><br/>
+
 ## IAM user 삭제
 ```
 aws iam delete-user --user-name Bob
