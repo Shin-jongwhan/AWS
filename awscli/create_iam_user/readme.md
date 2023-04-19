@@ -44,6 +44,9 @@ aws iam create-login-profile --user-name Bob --password "initial12!" --password-
 aws iam add-user-to-group --user-name Bob --group-name admin
 ```
 #### ![image](https://user-images.githubusercontent.com/62974484/232964333-4ccd2f24-1c9d-4944-91ba-6b8113f2b004.png)
+### <br/>
+### 비밀번호를 바꿔주고 접속해보면 잘 된다.
+#### ![image](https://user-images.githubusercontent.com/62974484/232964592-ef0a78ef-8c27-48ea-b42d-51301ac40833.png)
 ### <br/><br/><br/>
 
 ## IAM user 삭제
