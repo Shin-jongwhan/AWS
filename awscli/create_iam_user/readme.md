@@ -33,7 +33,18 @@ aws iam create-login-profile --user-name Bob --password "initial12!" --password-
 ### 비밀번호 재설정하려고 하면 에러 난다. 권한이 없기 때문이다.
 ### 그래서 이제 권한만 붙여주면 된다.
 #### ![image](https://user-images.githubusercontent.com/62974484/232953986-365a32c6-e1b0-466f-a3cf-18e841f6e4f4.png)
+### <br/><br/><br/>
 
+## attach user group
+### 미리 만들어둔 admin user group 이 있다.
+#### ![image](https://user-images.githubusercontent.com/62974484/232964378-d12a85b1-67ef-42ff-81ef-d7be28873eb1.png)
+### <br/>
+### user group 을 attach 해보자.
+```
+aws iam add-user-to-group --user-name Bob --group-name admin
+```
+#### ![image](https://user-images.githubusercontent.com/62974484/232964333-4ccd2f24-1c9d-4944-91ba-6b8113f2b004.png)
+### <br/><br/><br/>
 
 ## IAM user 삭제
 ```
