@@ -27,9 +27,22 @@ aws organizations create-account --email shinejh0528@gmail.com --account-name "j
 }
 ```
 ### <br/><br/><br/>
-
 ### AWS organization 에 가보면 새로운 account 가 생긴 것을 확인할 수 있다.
-### 
 #### ![image](https://user-images.githubusercontent.com/62974484/232943612-a8c13be4-9d08-4431-bd71-4968844da78e.png)
+### <br/><br/><br/>
 
+## create IAM user group
+```
+aws iam create-group --group-name cli-group-test
+```
+#### ![image](https://user-images.githubusercontent.com/62974484/232944844-956c4fdc-3ddf-4f97-a2ce-012198f02724.png)
+### <br/>
+### attach policy
+```
+aws iam attach-group-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAccess --group-name cli-group-test
+```
+### 그러면 group 에 policy 가 붙은 것을 확인할 수 있다.
+#### ![image](https://user-images.githubusercontent.com/62974484/232945079-a635ff77-b620-4491-a37e-36972ad0131f.png)
+
+### <br/><br/><br/>
 
