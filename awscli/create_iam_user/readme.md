@@ -50,10 +50,27 @@ aws iam add-user-to-group --user-name Bob --group-name admin
 ### <br/><br/><br/>
 
 ## user - group 제거
-### group 조회
+### group 조회 (그룹 이름으로)
 ### * user 를 삭제하려면 attach 된 group 을 제거해줘야 한다.
 ```
 aws iam get-group --group-name MyIamGroup
+```
+### group 조회 (user name 으로)
+```
+aws iam list-groups-for-user --user-name jhshin
+```
+```
+{
+    "Groups": [
+        {
+            "Path": "/",
+            "GroupName": "tgs_admin",
+            "GroupId": "AGPAYELBJFIPAUQAE24OZ",
+            "Arn": "arn:aws:iam::559086643742:group/tgs_admin",
+            "CreateDate": "2023-04-17T01:02:32Z"
+        }
+    ]
+}
 ```
 ### user - group 제거
 ```
