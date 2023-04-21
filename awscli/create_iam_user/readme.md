@@ -19,6 +19,11 @@ aws iam create-user --user-name Bob
 ```
 ### Bob 계정이 생성되었다.
 #### ![image](https://user-images.githubusercontent.com/62974484/232953033-f8df3afc-8017-4f73-ad35-b446a8b15aeb.png)
+### <br/>
+### user 조회
+```
+aws iam get-user --user-name 5725e1b46a85591d
+```
 ### <br/><br/><br/>
 
 ## initial password 설정
