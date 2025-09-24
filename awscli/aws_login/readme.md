@@ -20,3 +20,14 @@ aws configure
 ```
 ### <br/>
 
+### 로그인 확인
+```
+aws sts get-caller-identity
+```
+### <br/>
+
+### 명령어로 아무거나 조회해보자. 나는 congnito 꺼를 조회해보았다.
+```
+aws cognito-idp list-user-pools --region ap-northeast-2 --max-results 60
+```
+#### <img width="890" height="149" alt="image" src="https://github.com/user-attachments/assets/547eb48a-4ba6-4be2-83b9-cddfb92a7457" />
